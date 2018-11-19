@@ -1,0 +1,434 @@
+{
+	"audiences" :[
+		{
+			"parents" : {
+				"headline" : "Hello, parent/guardian!",
+				"body" : "Take a couple of minutes and step into a student’s shoes while taking this quiz. It’s a great way to help you have conversations with them about what type of career they might like based on their interests!"
+			},
+			"counselors" : {
+				"headline" : "Hello, counselor!",
+				"body" : "Take a couple of minutes and step into a student’s shoes while taking this quiz. It’s a great way to help you have conversations with them about what type of career they might like based on their interests!"
+			}
+		}
+	],
+	"progress":[ 
+		"Keep going to find out your character!", 
+		"You're over halfway... don't stop now!", 
+		"Just a few more questions!"
+	],
+	"questions":[
+		{
+			"title" : "When you're starving, you're most likely to:",
+			"graphic" : "",
+			"alt" : "",
+			"answers" : [
+				{
+					"text" : "Look in the fridge and cross your fingers.",
+					"icon" : "series1-icon-1.svg",
+					"points" : ["realistic", "artistic", "enterprising"]
+				},
+				{
+					"text" : "Grab an energy bar and run.",
+					"icon" : "series1-icon-2.svg",
+					"points" : ["investigative", "social", "enterprising"]
+				},
+				{
+					"text" : "Meet friends for pizza.",
+					"icon" : "series1-icon-3.svg",
+					"points" : ["social"]
+				},
+				{
+					"text" : "I'm hardly ever starving because I eat at specific times.",
+					"icon" : "series1-icon-4.svg",
+					"points" : ["conventional"]
+				}
+			]
+		},
+		{
+			"title" : "Which summer class would you rather take?",
+			"graphic" : "series2-graphic.png",
+			"alt" : "Tell us.",
+			"answers" : [
+				{
+					"text" : "Woodworking",
+					"icon" : "",
+					"points" : ["conventional,realistic"]
+				},
+				{
+					"text" : "Speech/Debate",
+					"icon" : "",
+					"points" : ["enterprising"]
+				},
+				{
+					"text" : "CPR",
+					"icon" : "",
+					"points" : ["realistic","social","investigative","conventional"]
+				},
+				{
+					"text" : "Sports clinic",
+					"icon" : "",
+					"points" : ["realistic","social"]
+				}
+			]
+		},
+		{
+			"title" : "If you needed $, how would you earn it?",
+			"graphic" : "series3-graphic.png",
+			"alt" : "Tell us.",
+			"answers" : [
+				{
+					"text" : "GoFundMe",
+					"icon" : "",
+					"points" : ["enterprising","conventional","social"]
+				},
+				{
+					"text" : "Babysit",
+					"icon" : "",
+					"points" : ["social","artistic"]
+				},
+				{
+					"text" : "Create an app",
+					"icon" : "",
+					"points" : ["conventional","investigative"]
+				},
+				{
+					"text" : "Sell my art",
+					"icon" : "",
+					"points" : ["realistic","artistic"]
+				}
+			]
+		},
+		{
+			"title" : "Pick a movie:",
+			"graphic" : "",
+			"alt" : "",
+			"answers" : [
+				{
+					"text" : "Space documentary",
+					"icon" : "series4-icon-1.svg",
+					"points" : ["realistic","investigative","conventional"]
+				},
+				{
+					"text" : "Adventure",
+					"icon" : "series4-icon-2.svg",
+					"points" : ["investigative","realistic"]
+				},
+				{
+					"text" : "Shakespeare adaptation",
+					"icon" : "series4-icon-3.svg",
+					"points" : ["artistic","investigative"]
+				},
+				{
+					"text" : "Business biopic",
+					"icon" : "series4-icon-4.svg",
+					"points" : ["enterprising"]
+				}
+			]
+		},
+		{
+			"title" : "In a group project, you'd:",
+			"graphic" : "series5-graphic.png",
+			"alt" : "Tell us what you'd do.",
+			"answers" : [
+				{
+					"text" : "Do the research",
+					"icon" : "",
+					"points" : ["conventional","investigative","realistic"]
+				},
+				{
+					"text" : "Make a PowerPoint",
+					"icon" : "",
+					"points" : ["realistic","conventional","artistic","investigative"]
+				},
+				{
+					"text" : "Make a poster",
+					"icon" : "",
+					"points" : ["artistic","realistic","enterprising"]
+				},
+				{
+					"text" : "Present to the class",
+					"icon" : "",
+					"points" : ["social","enterprising"]
+				}
+			]
+		},
+		{
+			"title" : "Pick the birthday present you'd want to receive:",
+			"graphic" : "series6-graphic.png",
+			"alt" : "Tell us which gift you'd choose.",
+			"answers" : [
+				{
+					"text" : "A book or e-reader",
+					"icon" : "",
+					"points" : ["conventional","realistic","artistic"]
+				},
+				{
+					"text" : "Tickets to a concert",
+					"icon" : "",
+					"points" : ["realistic","artistic"]
+				},
+				{
+					"text" : "A gift card to my fave restaurant",
+					"icon" : "",
+					"points" : ["social","artistic"]
+				},
+				{
+					"text" : "A day spent paddle-boarding",
+					"icon" : "",
+					"points" : ["realistic"]
+				},
+				{
+					"text" : "Shares of my favorite stock",
+					"icon" : "",
+					"points" : ["enterprising"]
+				}
+			]
+		},
+		{
+			"title" : "Pick a good deed:",
+			"graphic" : "series7-graphic.png",
+			"alt" : "Tell us which awesome thing you'd do.",
+			"answers" : [
+				{
+					"text" : "Walk shelter dogs",
+					"icon" : "",
+					"points" : ["realistic","investigative"]
+				},
+				{
+					"text" : "Tutor kids",
+					"icon" : "",
+					"points" : ["social","artistic","investigative"]
+				},
+				{
+					"text" : "Clean up a park",
+					"icon" : "",
+					"points" : ["social","artistic","realistic"]
+				},
+				{
+					"text" : "Volunteer at Habitat for Humanity",
+					"icon" : "",
+					"points" : ["social","conventional"]
+				},
+				{
+					"text" : "Call my senator",
+					"icon" : "",
+					"points" : ["enterprising"]
+				}
+			]
+		},
+		{
+			"title" : "Pick an elective:",
+			"graphic" : "",
+			"alt": "",
+			"answers" : [
+				{
+					"text" : "Theater",
+					"icon" : "series8-icon-1.svg",
+					"points" : ["artistic"]
+				},
+				{
+					"text" : "Robotics",
+					"icon" : "series8-icon-2.svg",
+					"points" : ["investigative","conventional"]
+				},
+				{
+					"text" : "Debate team",
+					"icon" : "series8-icon-3.svg",
+					"points" : ["enterprising"]
+				},
+				{
+					"text" : "Running club",
+					"icon" : "series8-icon-4.svg",
+					"points" : ["realistic","social"]
+				}
+			]
+		},
+		{
+			"title" : "If you were on the yearbook committee, you're most likely to be in charge of:",
+			"graphic" : "series9-graphic.png",
+			"alt" : "Tell us what you'd do.",
+			"answers" : [
+				{
+					"text" : "Photos",
+					"icon" : "",
+					"points" : ["enterprising","social","artistic"]
+				},
+				{
+					"text" : "Layout",
+					"icon" : "",
+					"points" : ["artistic","realistic","enterprising"]
+				},
+				{
+					"text" : "Marketing/Sales",
+					"icon" : "",
+					"points" : ["social","enterprising","conventional"]
+				},
+				{
+					"text" : "Editing",
+					"icon" : "",
+					"points" : ["investigative"]
+				}
+			]
+		},
+		{
+			"title" : "Pick an avatar:",
+			"graphic" : "",
+			"alt" : "",
+			"answers" : [
+				{
+					"text" : "President",
+					"icon" : "series10-icon-1.svg",
+					"points" : ["enterprising"]
+				},
+				{
+					"text" : "Number-cruncher",
+					"icon" : "series10-icon-2.svg",
+					"points" : ["investigative","conventional"]
+				},
+				{
+					"text" : "Fashionista",
+					"icon" : "series10-icon-3.svg",
+					"points" : ["realistic","artistic","social"]
+				},
+				{
+					"text" : "Mad scientist",
+					"icon" : "series10-icon-4.svg",
+					"points" : ["investigative"]
+				},
+				{
+					"text" : "Tech guru",
+					"icon" : "series10-icon-5.svg",
+					"points" : ["conventional"]
+				},
+				{
+					"text" : "Bookworm",
+					"icon" : "series10-icon-6.svg",
+					"points" : ["artistic"]
+				}
+			]
+		},
+		{
+			"title" : "Your favorite Instagram post is a...",
+			"graphic" : "series11-graphic.png",
+			"alt" : "Tell us your favorite pic.",
+			"answers" : [
+				{
+					"text" : "Selfie",
+					"icon" : "",
+					"points" : ["realistic"]
+				},
+				{
+					"text" : "Group pic",
+					"icon" : "",
+					"points" : ["social"]
+				},
+				{
+					"text" : "Food pic",
+					"icon" : "",
+					"points" : ["social","artistic"]
+				},
+				{
+					"text" : "Nature pic",
+					"icon" : "",
+					"points" : ["artistic"]
+				},
+				{
+					"text" : "Pretty building pic",
+					"icon" : "",
+					"points" : ["realistic","enterprising"]
+				}
+			]
+		},
+		{
+			"title" : "Pick your superpower:",
+			"graphic" : "",
+			"alt" : "",
+			"answers" : [
+				{
+					"text" : "Using hacking skills to defeat evil",
+					"icon" : "series12-icon-1.svg",
+					"points" : ["conventional"]
+				},
+				{
+					"text" : "Curing cancer",
+					"icon" : "series12-icon-2.svg",
+					"points" : ["investigative"]
+				},
+				{
+					"text" : "Harnessing the power of nature",
+					"icon" : "series12-icon-3.svg",
+					"points" : ["realistic","artistic"]
+				},
+				{
+					"text" : "Ending illiteracy",
+					"icon" : "series12-icon-4.svg",
+					"points" : ["social"]
+				}
+			]
+		},
+		{
+			"title" : "Pick a school trip:",
+			"graphic" : "series13-graphic.png",
+			"alt" : "Tell us where you'd like to go.",
+			"answers" : [
+				{
+					"text" : "NASA",
+					"icon" : "",
+					"points" : ["realistic","investigative"]
+				},
+				{
+					"text" : "Water park",
+					"icon" : "",
+					"points" : ["social"]
+				},
+				{
+					"text" : "Zoo",
+					"icon" : "",
+					"points" : ["realistic","investigative"]
+				},
+				{
+					"text" : "Capitol building",
+					"icon" : "",
+					"points" : ["enterprising"]
+				},
+				{
+					"text" : "Presidential library",
+					"icon" : "",
+					"points" : ["conventional","enterprising"]
+				}
+			]
+		},
+		{
+			"title" : "Pick a costume:",
+			"graphic" : "series14-graphic.png",
+			"alt" : "Tell us how you'd dress up.",
+			"answers" : [
+				{
+					"text" : "Firefighter",
+					"icon" : "",
+					"points" : ["social"]
+				},
+				{
+					"text" : "Einstein",
+					"icon" : "",
+					"points" : ["investigative"]
+				},
+				{
+					"text" : "Superhero",
+					"icon" : "",
+					"points" : ["social","enterprising"]
+				},
+				{
+					"text" : "No costume, no way",
+					"icon" : "",
+					"points" : ["conventional"]
+				},
+				{
+					"text" : "Something no one's ever done before",
+					"icon" : "",
+					"points" : ["artistic"]
+				}
+			]
+		}
+	]
+}

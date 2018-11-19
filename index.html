@@ -1,0 +1,66 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<base href=""/>
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content=""/>
+	<meta name="robots" content="noindex,nofollow"/>
+	<meta name="description" content=""/>
+	<meta name="keywords" content=""/>
+	<meta name="author" content=""/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+	<link href="dist/css/main.css" rel="stylesheet"/>
+</head>
+
+<body class="init">
+
+	<div class="logo"><span>Texas OnCourse</span></div>
+	
+	<!-- // INTRO -->
+	<section class="section-intro inview" id="intro">
+		<div class="section-intro-content">
+			<div class="section-intro-view" id="introView">
+				<div class="section-intro-characters">
+					<div class="section-intro-characters__wrapper js-character-animation">
+						<span><img src="assets/peter-quill.png"></span>
+						<span><img src="assets/mia-dolan.png"></span>
+						<span><img src="assets/tony-stark.png"></span>
+						<span><img src="assets/diana-prince.png"></span>
+						<span><img src="assets/katherine-johnson.png"></span>
+						<span><img src="assets/rey.png"></span>
+					</div>
+				</div>
+				<h1 class="heading-1">If you were a movie character, which one would you be?</h1>
+				<h2 class="heading-2">Find out and learn which career might be the best ﬁt for you too!</h2>
+				<div class="button-group">
+					<h3 class="heading-sub">Who Are You?</h3>
+					<a href="#" onclick="showIntro();return false;" class="button">I'm a student</a>
+					<a href="#" onclick="showIntro('parents');return false;" class="button">I’m a parent/guardian</a>
+					<a href="#" onclick="showIntro('counselors');return false;" class="button">I'm a counselor</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- // SURVEY -->
+
+	<section class="section-survey" id="survey">
+		<div class="section-survey-content">
+			<div class="section-survey-view">
+				<div id="surveyProgress" class="progressbar"></div>
+				<div id="surveyView"></div>
+				<a id="surveyBack" href="#" onclick="prevQuestion();return false;">Back</a>
+			</div>
+		</div>
+	</section>
+
+	<!-- // RESULTS -->
+	<section class="section-results" id="results" data-html=""></section>
+
+<script src="dist/js/main.js"></script>
+</body>
+</html>
