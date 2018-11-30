@@ -94,11 +94,12 @@ function buildSurvey() {
 
 	// Foreach question append to HTML
 	[].forEach.call(jsonData['questions'], function (question, index, questions) {
-
+		console.log("Making Each question!");
 		var a = question["answers"];
 		var g = question["graphic"];
 		var t = question["title"];
 		var alt = question["alt"];
+		var tIndex = 0;
 		var htmlQuestion = "",
 			htmlAnswers = "",
 			htmlContainer = "";
@@ -106,10 +107,10 @@ function buildSurvey() {
 		/* === Question title and graphic */
 
 		if(g !== "") {
-			htmlQuestion += "<h3 class=\"heading-3 quiz-question-title\">" + t + "</h3>";
-			htmlQuestion += "<div class=\"quiz-question-graphic\"><img src=\"assets/" + g + "\" alt=\"" + alt + "\"></div>";
+			htmlQuestion += '<h3 class="heading-3 quiz-question-title" tabindex="0">' + t + '</h3>';
+			htmlQuestion += '<div class="quiz-question-graphic"><img src="assets/' + g + '" alt="' + alt + '"></div>';
 		} else {
-			htmlQuestion += "<h3 class=\"heading-3 quiz-question-title\">" + t + "</h3>";
+			htmlQuestion += '<h3 class="heading-3 quiz-question-title" tabindex="0">' + t + '</h3>';
 		}
 
 		/* === Question answers and icons */
@@ -117,11 +118,12 @@ function buildSurvey() {
 	    htmlAnswers += "<div class=\"quiz-question-options\">";
 	    for (var o in a) {
 	    	if(a[o].icon !== "") {
-	    		htmlAnswers += "<div class=\"quiz-question-option grid\" data-options=\"" + a[o].points + "\">";
+				console.log("Tab Index Fired!");
+	    		htmlAnswers += '<div tabindex="0" class=\"quiz-question-option grid\" data-options=\"' + a[o].points + "\">";
 	    		htmlAnswers += "<div class=\"title\"><span>" + a[o].text + "</span></div>";
-	    		htmlAnswers += "<img src=\"assets/" + a[o].icon + "\" alt=\"" + a[o].text + "\"></div>";
+	    		htmlAnswers += "<img src=\"assets/" + a[o].icon + "\" alt=\"" + a[o].text + "\"></div>"
 	    	} else {
-	    		htmlAnswers += "<div class=\"quiz-question-option\" data-options=\"" + a[o].points + "\">";
+	    		htmlAnswers += '<div tabindex="0" class=\"quiz-question-option\" data-options=\"' + a[o].points + "\">";
 	    		htmlAnswers += "<div class=\"title\"><span>" + a[o].text + "</span></div></div>";
 	    	}
 	    }
@@ -316,6 +318,20 @@ function setupQuestions() {
 			updateAnswer($id, $options);
 			changeQuestion(next,$dir);
 		}, false);
+		item.addEventListener("keyup", function(event){
+			event.preventDefault();
+			if(event.keyCode == 13){ // Enter key
+				let $id = currStep;
+				let $dir = "next";
+				let next = $id + 1;
+				this.classList.add("selected");
+				let $options = this.getAttribute('data-options');
+					$options = $options.split(',');
+				updateAnswer($id, $options);
+				changeQuestion(next,$dir);
+			}
+		});
+
 	});
 }
 
@@ -407,10 +423,6 @@ function calculateResults() {
 			}
 		});
 	}
-
-	console.log('--------------------------------------------');
-	console.log('%cIt\'s looking like: ' + (result == null ? "Get Started" : result), 'font-weight: bold;text-transform:uppercase');
-	console.log('********************************************');
 }
 
 
